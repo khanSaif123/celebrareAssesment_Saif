@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <!-- content -->
+        <div class="content">
+            <!-- login div -->
+            <div class="loginDiv">
+                <!-- header contetnt -->
+                <header class="headerContent">
+                    <!-- logo -->
+                    <div class="logo-div">
+                        <div class="logo"><img src="images/logo.jpg"/></div>
+                        <div class="headerText">REGIONS <span style="display: block;">Mortage</span></div>
+                    </div>
+
+                    <div class="text-btn">
+                        <div class="text">Are You a new customer?</div>
+                        <div class="btn">Enroll Now</div>
+                        <div class="tooltip" id="tooltip">
+                            <div class="tooltip-heading">Enroll now to:</div>
+                            <div class="black-triangle"></div>
+                            <div>
+                                <div><span class="tick">✓</span>Access your loans online</div>
+                                <div><span class="tick">✓</span>Pay your mortgage online</div>
+                                <div><span class="tick">✓</span>View your mortgage statements</div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+
+                </header>
+
+                <!-- heading -->
+                <div class="form-content">
+                    <div class="heading-content">
+                        <div class="form-heading">Welcome Back</div>
+                        <div class="form-text">Sign in to your Regions MyMortgage account.</div>
+                     </div>
+    
+                     <div class="form">
+                        <!-- online input field -->
+                        <label  class="inp">
+                            <input type="text" id="inp" class="inp1" placeholder="&nbsp;">
+                            <span class="label">Online ID</span>
+                            <!-- <span class="focus-bg"></span> -->
+                          </label>
+
+                       <!-- password input field -->
+                       <label for="inp" class="inp">
+                            <input onkeyup="fnInputChange(event)" type="password" id="inp" class="inp2" placeholder="&nbsp;">
+                            <span class="label">Password</span>
+                            <!-- <span class="focus-bg"></span> -->
+                            <span class="show-hide"></span>
+                      </label>
+                      
+                      <!-- checkbox -->
+                     <div class="checkbox-div">
+                        <label class="remember-meLabel">
+                            <input type="checkbox" class="remember-input">
+                            <div class="remember-div"></div>
+                            <span>Remember me</span>
+                        </label>
+                    
+                    </div>
+                        <button type="button" class="button" onclick="this.classList.toggle('button--loading')">
+                            <span class="button__text">Login</span>
+                        </button>
+                     </div>
+    
+                     <div class="forget-id-pwd">
+                        <div>Forget Online ID?</div>
+                        <span class="dot">.</span>
+                        <div>Forget Password?</div>
+                     </div>
+                </div>
+
+            </div>
+
+            <!-- image div -->
+            <div class="imageDiv">
+                
+                <img src="images/loginImage.jpg"/>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
