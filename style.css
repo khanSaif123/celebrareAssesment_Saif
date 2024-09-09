@@ -12,7 +12,8 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .logo>img{
@@ -90,9 +91,6 @@ body {
  cursor: pointer;
 }
 
-.loginDiv{
-   
-}
 
 .logo-div{
     display: flex;
@@ -490,6 +488,71 @@ body {
     right: 13px;
 }
 
+/* Media query for mobile screens */
+@media only screen and (max-width: 600px) {
+    /* Hide the header text */
+    #headerText {
+        display: none;
+    }
 
+    /* Center the logo */
+    .logo-div {
+        display: flex;
+        justify-content: center;
+        
+    }
 
+    /* Hide the text next to the Enroll Now button */
+    .text-btn .text {
+        display: none;
+    }
 
+    /* Move the Enroll Now button below the logo */
+    .text-btn .btn {
+        margin-top: 20px;
+        padding: 12px 20px;
+        display: flex;
+        position: relative;
+        top: -17px;
+       
+        
+    }
+
+    /* Hide the image div */
+    #imageDiv {
+        display: none;
+    }
+}
+
+/* Media query for medium screens */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .content{
+        width: 100vh;
+        margin: 0 auto;
+    }
+
+    /* Hide the header text */
+    #headerText {
+        display: none;
+    }
+    
+    /* Hide the text next to the Enroll Now button */
+    .text-btn .text {
+        display: none;
+    }
+
+    /* Move the Enroll Now button below the logo */
+    .text-btn .btn {
+        margin-top: 20px;
+        display: flex;
+        padding: 12px 20px;
+        position: relative;
+        top: -20px;
+    }
+
+    /* Hide the image div */
+    #imageDiv {
+        display: none;
+    }
+}
